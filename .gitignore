@@ -1,0 +1,2 @@
+#Preventing unwanted files from going to my repo
+.DS_Store
