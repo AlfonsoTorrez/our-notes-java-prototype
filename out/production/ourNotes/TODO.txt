@@ -2,8 +2,10 @@
 
 TODO's
 -----
+-Create different controllers
 -Email verification (2-auth)
 -Popup when login info is incorrect
+-Decide whether I need a framework?
 
 Current TODO's
 ------
@@ -11,6 +13,8 @@ Current TODO's
     - Nav bar
     - Present notes
     - Test Menu (can you use onClick for it)
+-Figure out proper way to switch through views
+
 
 Tasks Done
 -----
