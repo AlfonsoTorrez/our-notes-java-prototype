@@ -8,6 +8,7 @@ public class DBConnection {
     private ResultSet rs;
     private String currUser = "hacker";
 
+    //Connecting to our SQLdb
     public DBConnection(){
         //Will attempt to connect to our MySQL DB
         //Needs to be in a Try-Catch
@@ -21,10 +22,12 @@ public class DBConnection {
         }
 
     }
+
     //Obtain user name
     public String getCurrUser(){
         return currUser;
     }
+
     //Displays all rows of the table
     public void getRows() {
         String query = "SELECT * FROM users;";
@@ -50,6 +53,7 @@ public class DBConnection {
             System.out.println(e1);
         }
     }
+
     //Checking if the user exists
     //TODO:: pop-up for incorrect info
     //TODO:: Email verification (random number) (2-auth)

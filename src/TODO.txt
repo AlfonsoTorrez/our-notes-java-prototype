@@ -1,0 +1,18 @@
+- Using this text file to keep track of the things I need to do.
+
+TODO's
+-----
+-Email verification (2-auth)
+-Popup when login info is incorrect
+
+Current TODO's
+------
+-Build home screen
+    - Nav bar
+    - Present notes
+    - Test Menu (can you use onClick for it)
+-HOW TO CHANGE PAGES CORRECTLY
+
+
+Tasks Done
+-----
