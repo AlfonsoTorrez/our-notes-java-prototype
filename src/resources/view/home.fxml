@@ -18,11 +18,29 @@
         <menus>
           <Menu mnemonicParsing="false" text="File">
                <items>
-                  <MenuItem fx:id="homeMI" mnemonicParsing="false" text="Go Home" />
-                  <MenuItem fx:id="newNoteMI" mnemonicParsing="false" text="New Note" />
+                  <MenuItem fx:id="homeMI" mnemonicParsing="false" text="New Note" />
+                  <MenuItem fx:id="newNoteMI" mnemonicParsing="false" text="Print" />
                </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="About" />
+          <Menu mnemonicParsing="false" text="Note">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Duplicate" />
+                  <MenuItem mnemonicParsing="false" text="Archive" />
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Settings">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Profile" />
+                  <MenuItem mnemonicParsing="false" text="Font" />
+                  <MenuItem mnemonicParsing="false" text="Font Size" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="About">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Version" />
+                  <MenuItem mnemonicParsing="false" text="Author" />
+              </items>
+            </Menu>
         </menus>
       </MenuBar>
     </children>

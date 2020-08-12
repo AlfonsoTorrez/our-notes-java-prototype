@@ -62,7 +62,7 @@ public class DBConnection {
         try{
             rs = stmt.executeQuery(query);
             if(rs.next()) {
-                System.out.println("Welcome!");
+                //System.out.println("Welcome!"); THIS WAS A EXAM
                 currUser = rs.getString("first_name");
                 return true;
             }

@@ -4,7 +4,7 @@ TODO's
 -----
 -Create different controllers
 -Email verification (2-auth)
--Popup when login info is incorrect
+-Popup when login info is incorrect (Alert control)
 -Decide whether I need a framework?
 
 Current TODO's
