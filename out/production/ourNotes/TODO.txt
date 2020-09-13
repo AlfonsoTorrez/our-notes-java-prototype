@@ -10,9 +10,9 @@ TODO's
 Current TODO's
 ------
 -Build home screen
-    - Nav bar
-    - Present notes
+    - Nav bar //CHECK
     - Test Menu (can you use onClick for it)
+    - Present notes
 -Figure out proper way to switch through views
 
 

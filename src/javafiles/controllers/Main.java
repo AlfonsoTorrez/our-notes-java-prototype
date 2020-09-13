@@ -19,12 +19,23 @@ import java.util.Scanner;
 
 public class Main extends Application {
     static DBConnection dbConn = new DBConnection();
+    private Scene currentScene;
 
+    //TODO:: Comeplete
+    public void changeScene(String newScene){
+       //currentScene = new Scene(FXMLLoader.load(getClass().getResource("../../resources/view/home.fxml")),400,300);
+    }
+
+    //Passing the currentScene value to use in another class
+    public Scene getScene(){
+        return currentScene;
+    }
 
 
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("../../resources/view/logIn.fxml"));
+        currentScene = new Scene(FXMLLoader.load(getClass().getResource("../../resources/view/home.fxml")),400,300);
         Button loginBtn = (Button) root.lookup("#loginBtn");//CHANGE ME BACK
         TextField uField = (TextField) root.lookup("#usernameField");
         TextField pField = (TextField) root.lookup("#passwordField");
@@ -36,20 +47,13 @@ public class Main extends Application {
         primaryStage.setResizable(false);
         primaryStage.show();
 
+        //System.out.println("BRUH");
 
-        //Creating ability to switch to another scene
-        Scene homeScene = new Scene(FXMLLoader.load(getClass().getResource("../../resources/view/home.fxml")),400,300);
+        //Creating ability to switch to another scene by clicking on the Login button
         loginBtn.setOnAction(actionEvent ->  {
             if(dbConn.authenticate(uField.getText(),pField.getText())){
-                primaryStage.setTitle("Home");
-                primaryStage.setScene(homeScene);
-                //TODO:: FIX ME
-
-                //Created a greeting for user
-                Text hText = (Text) homeScene.lookup("#homeText");
-                String helloSign = hText.getText();
-                helloSign = helloSign + dbConn.getCurrUser();
-                hText.setText(helloSign);
+                primaryStage.setTitle("Home - "+dbConn.getCurrUser());
+                primaryStage.setScene(currentScene);
             }
 
         });
